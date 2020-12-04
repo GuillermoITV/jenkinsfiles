@@ -4,7 +4,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+            sh '''
+              ls
+              pwd
+              cd /home/cloud_user/chef-repo/
+              ls
+              echo "hola mundo"
+            '''
             }
         }
         stage('Test') {
