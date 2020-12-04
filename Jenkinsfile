@@ -1,14 +1,11 @@
 pipeline {
-    agent { label 'nodo1' }
+    agent any
     stages {
-      stage('prueba 1') {
-        steps {
-            sh '''
-              ls
-              pwd
-              ls
-            '''
+        stage('Build') {
+            steps {
+                sh 'make' 
+                ls
+            }
         }
-      }
     }
 }
