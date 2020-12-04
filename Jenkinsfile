@@ -1,27 +1,14 @@
 pipeline {
-    agent any
-      
+    agent { label 'nodo1' }
     stages {
-        stage('Build') {
-            steps {
+      stage('prueba 1') {
+        steps {
             sh '''
               ls
               pwd
-              cd /home/cloud_user/chef-repo/
               ls
-              echo "hola mundo"
             '''
-            }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
+      }
     }
 }
