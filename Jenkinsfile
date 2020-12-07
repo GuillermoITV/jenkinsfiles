@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Hola 2'
+                echo 'Hola 3'
                 sh '''
                   ls
                   pwd
