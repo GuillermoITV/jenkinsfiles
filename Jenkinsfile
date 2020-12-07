@@ -6,7 +6,7 @@ pipeline {
                 echo 'Hola'
                 sh '''
                   #!/bin/bash
-                  ls
+                  uname -a
                   pwd
                   ls
                 '''
