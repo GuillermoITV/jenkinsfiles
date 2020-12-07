@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Hola 3'
+                echo 'esto lo ejecutaria en el nodo 3... si al menos tuviera uno!!!'
                 sh '''
                   ls
                   pwd
