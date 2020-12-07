@@ -5,7 +5,6 @@ pipeline {
             steps {
                 echo 'Hola 2'
                 sh '''
-                  #!/bin/bash
                   ls
                   pwd
                   uname -a
