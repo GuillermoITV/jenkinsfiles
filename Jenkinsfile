@@ -3,11 +3,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Hola'
+                echo 'Hola 2'
                 sh '''
                   #!/bin/bash
                   ls
                   pwd
+                  uname -a
                   ls
                 '''
             }
